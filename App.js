@@ -30,6 +30,8 @@ class App extends Component {
     }
   }
 
+
+  //add items in array
    addItem = () => {
 
     const additems = {
@@ -46,6 +48,7 @@ class App extends Component {
    
   }
 
+  //if task is completed, add in completedItems and remove from items
   checkItem = (id) =>{
     this.setState({
       checkStatus: true,
@@ -65,7 +68,7 @@ class App extends Component {
   }
 
 
-
+  //remove item
   removeItem = (id) => {
     const index = this.state.items.findIndex(item => item.id === id);
 
@@ -75,6 +78,7 @@ class App extends Component {
     }
   }
 
+  //if task unchecked 
   revertItem = (id) => {
    console.log(id);
    
@@ -97,7 +101,7 @@ class App extends Component {
   }
 
   render() {
-    const {items, value, selcetedId, itemText, completedItems} = this.state;
+    const {items, itemText, completedItems} = this.state;
   return (
   
       <SafeAreaView>
