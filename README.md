@@ -3,5 +3,5 @@ A simple todo list app with react-native
 
 
 
-![todo_app_img](/app_img/todo_1.png)
-![todo_app_img](/app_img/todo_2.png)
+<a href="/app_img/todo_2.png"><img src="/app_img/todo_2.png" height="50%" width="50%" ></a>
+
